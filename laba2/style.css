@@ -1,0 +1,12 @@
+body
+{
+    font-size: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+form input
+{
+    padding-left: 10px;
+    margin : 20px 0px 20px ;
+}
