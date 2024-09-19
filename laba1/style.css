@@ -1,0 +1,23 @@
+.main-text
+{
+    font-size: 20px; 
+    text-align: justify;
+}
+
+.list
+{
+    list-style: none;
+    font-size: 20px;
+    padding-left: 0px;
+}
+
+.list li
+{
+    padding-bottom: 5px;
+}
+
+body 
+{
+    padding-left: 20px;
+    width: 700px;
+}
