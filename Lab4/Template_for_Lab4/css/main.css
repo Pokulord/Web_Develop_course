@@ -1,0 +1,126 @@
+
+:root
+{
+	--main-color1: white;
+	--main-color2: black;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: #201b2d;
+	font-size: 15px;
+	padding: 0;
+	margin: 0;
+}
+
+div
+{
+	font-weight: bold;
+
+}
+
+a
+{
+	text-decoration: none;
+	color: var(--main-color2);
+	font-weight: bold;
+}
+
+div, p, input, button, form, span, a, ul, li {
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 900;
+}
+
+p {
+	line-height: 1.5em;
+	font-size: 12px;
+}
+
+.container 
+{
+	width: 1123px;
+	margin: 0 auto;
+}
+
+header
+{
+	background-color: rgb(85,164,244);
+}
+
+.header-container 
+{
+	display: flex;
+	flex-direction: row;
+	padding-top: 20px;
+	padding-left: 30px;
+	color:var(--main-color1);
+}
+
+.header-container *
+{
+	margin-bottom: 10px;
+}
+
+.but
+{
+	background-color: rgb(255, 212, 41);
+	border: none;
+	text-align: center;
+	height: 40px;
+	margin-top: 20px;
+	margin-bottom: 150px;
+	text-decoration: none;
+}
+
+.block
+{
+	margin-left: 5px;
+	margin-right: 5px;
+	text-align: center;
+	padding-left: 60px;
+	padding-right: 60px;
+	padding-bottom: 60px;
+}
+
+.block-info
+{
+	font-weight: normal;
+	color: grey;
+}
+
+.callback_form
+{
+	padding-top: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.callback_form input
+{
+	padding-left: 20px;
+	width: 250px;
+	height: 30px;
+	border: solid 2px rgb(207, 204, 204);
+	margin-bottom: 10px;
+}
+
+
+footer 
+{
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background: rgb(35,109,180);
+background: linear-gradient(0deg, rgba(35,109,180,1) 0%, rgba(70,191,233,1) 51%, rgba(31,92,159,1) 100%, rgba(9,9,121,1) 100%);
+}
+
+.footer-text
+{
+	text-align: center;
+	color:var(--main-color1);
+}
