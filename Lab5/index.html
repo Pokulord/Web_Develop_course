@@ -8,22 +8,26 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 </head>
 <body>
-    <header>
+    <header id = "headdd">
         <div class="container">
             <div class="header-container">
-                <div class="left-header-sect">
+                <div class="left-header-sect animate__animated animate__backInLeft">
                 <img src="img/logo.png" alt="">
                 <h1 style="width: 500px;margin-top: 25px; margin-bottom:4px; font-size: 30px;">С помощью нас <br> вы можете создать то, о чём <br></h1>
                 <span style="font-size: 40px;">желаете!</span>
                 <p style="width: 330px;">Наши возможности и опыт позволяют вам достичь огромного успеха. Мы верим в вас! И знаем это на 100%. Вас не остановить!</p>
                 <button class="but" style="width: 180px;" onclick="">
-                    <a  href="#/">Узнать больше....</a>
+                    <a id="buta" href="#/">Узнать больше....</a>
                 </button>
                 </div>
-                <div class="right-header-sect" style="margin-left: 20px; padding-left: 130px;">
-                    <img style="transform: scale(0.8);" src="img/header-img.png" alt="">
+                <div class="right-header-sect animate__animated animate__backInRight" style="margin-left: 20px; padding-left: 130px;">
+                    <img class = "right_head_img" style="transform: scale(0.8);" src="img/header-img.png" alt="">
                 </div>
             </div>
         </div>
@@ -54,7 +58,7 @@
     </div>
     <div class="undermain-sect" style="background-color: rgb(236,243,248);">
         <div class="container">
-            <div style="text-align: center; padding-top: 30px; font-size:20px; padding-bottom: 30px;">
+            <div id = "form_section" class="form_section no_go" style="text-align: center; padding-top: 30px; font-size:20px; padding-bottom: 30px;">
                 Форма заказа обратного звонка
                 <form class="callback_form" action="#">
                 <input name="your_name" type="text" placeholder="Имя">
@@ -77,5 +81,5 @@
         </div>
     </footer>
 </body>
-</script>
+<script src="js/script.js"></script>
 </html>

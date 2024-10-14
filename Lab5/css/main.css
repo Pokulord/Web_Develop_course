@@ -1,4 +1,5 @@
 
+
 :root
 {
 	--main-color1: white;
@@ -49,8 +50,10 @@ p {
 
 header
 {
-	background-color: rgb(85,164,244);
+	background:url("../img/back.svg") no-repeat;
+	transition: ease-out 0.3s;
 }
+
 
 .header-container 
 {
@@ -93,13 +96,75 @@ header
 	color: grey;
 }
 
+
+.block img:hover
+{
+	transform: scale(1.4);
+	transition: all 0.3s 0.5s;
+}
+
+
+.main-sect
+{
+	position: relative;
+	animation-name: KaboomFromTheRight;
+	animation-duration: 1s;
+}
+
+
+@keyframes KaboomFromTheRight
+{
+	from
+	{
+		right: 1300px;
+	}
+
+	to 
+	{
+		right: 0px;
+	}
+}
+
+
+.phone_sect
+{
+	font-size: 20px;
+	
+}
+
+
+header.change
+{
+	background: url("../img/anime.gif") no-repeat;
+	background-size: cover;
+	/* background-color: rgb(223, 62, 62); */
+}
 .callback_form
 {
 	padding-top: 30px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	position: relative;
 }
+
+
+.form_section
+{
+	position: relative;
+}
+
+.form_section.no_go
+{
+	right: 1300px;
+}
+
+.form_section.time_to_go
+{
+	animation-name: KaboomFromTheRight;
+	animation-duration: 0.5s;
+}
+
 
 .callback_form input
 {
@@ -124,3 +189,5 @@ background: linear-gradient(0deg, rgba(35,109,180,1) 0%, rgba(70,191,233,1) 51%,
 	text-align: center;
 	color:var(--main-color1);
 }
+
+
