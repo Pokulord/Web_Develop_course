@@ -68,7 +68,7 @@ function SendDigit()
     var user_digit = document.querySelector("#user_digit_input").value ;
     if (!isEmp(user_digit) && isInteger(Number(user_digit)) )
     {
-        if (user_digit === GenInt)
+        if (Number(user_digit) === Number(GenInt))
         {
             alert ("Поздравляем!!!!");
             FinishGame();
