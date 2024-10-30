@@ -38,7 +38,7 @@ function StartGame()
         document.getElementById("gameblock").classList.remove("gameisnot");
         var WasGameStarted = localStorage.getItem("gamestart") === 'true';
         localStorage.setItem("gamestart" , !WasGameStarted);
-        var GenInt = randomInteger(1, 5); // 1
+        var GenInt = randomInteger(1, 10); 
         localStorage.setItem("cur_digit" , GenInt);
         console.log(`Загаданное число : ${GenInt}`)
         localStorage.setItem("tries_left" , TRIES_COUNT) ;
@@ -63,6 +63,7 @@ function FinishGame()
 
 function SendDigit()
 {
+    var GenInt = localStorage.getItem("cur_digit");
     var current_tries = localStorage.getItem("tries_left");
     var user_digit = document.querySelector("#user_digit_input").value ;
     if (!isEmp(user_digit) && isInteger(Number(user_digit)) )
@@ -74,10 +75,10 @@ function SendDigit()
         }
         else
         {
-            alert ("Вы не угадали") ;
+            document.querySelector(".text-under-input").innerHTML = `Вводимое число ${(Number(user_digit) >  Number(GenInt)) ? "больше" : "меньше"}` ;
             localStorage.setItem("tries_left", current_tries - 1);
             document.querySelector(".tries-count").innerHTML = `Осталось попыток : ${current_tries - 1} ` ;
-            if (Number(current_tries -1 ) == 0)
+            if (Number(current_tries - 1 ) == 0)
                 {
                     FinishGame();
                     return;
