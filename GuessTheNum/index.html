@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GuessTheNumGame</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" </head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header-cont animate__animated animate__backInLeft">
+                <img class="header_pic" src="imgs/header_pic.png" alt="">
+                <div>Игра "Угадай число"</div>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-sect animate__animated animate__backInUp">
+        <div class="container">
+            <button id="start-but" class="start-but gameisnot">
+                <div class="letsstart-text">
+                    НАЧАТЬ
+                </div>
+            </button>
+            <br>
+            <div id="gameblock" class="gameblock gameisnot">
+                <input id="user_digit_input" class="user_digit_input" type="text" placeholder="Что за число загадали?">
+                <div class="text-under-input"></div>
+                <div class="tries-count">
+                    
+                </div>
+                <br>
+                <button id="send_but" class="send_but">
+                    <div class="send_text">
+                        ОТПРАВИТЬ
+                    </div>
+                </button>
+                <button id="finish_game_but" class="send_but">
+                    <div class="send_text">
+                        Закончить игру досрочно
+                    </div>
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="scripts/scr.js"></script>
+
+</html>

@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root
+{
+    --font-color: #C8ACD6;
+    --back-col: #17153B;
+    --but-col: #2E236C;
+}
+
+body
+{
+    background-color: var(--back-col);
+    padding-top: 103px;
+}
+
+.container
+{
+    width: 1200px;
+    margin: 0 auto ;
+}
+
+.header-cont
+{
+    display: flex;
+    flex-direction: row;
+    color: var(--font-color) ;
+    font-weight: 800;
+    font-size: 64px;
+    font-family: "Montserrat Alternates", sans-serif;
+    align-items: center;
+    justify-content: center;
+}
+
+.header_pic
+{
+    object-fit: contain;
+    width: 117px;
+    height: 118px;
+    margin-right: 9px;
+}
+
+.main-sect
+{
+    text-align: center;
+    padding-top: 171px;
+}
+
+
+.start-but.gameisnot
+{
+    font-size: 64px;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 800;
+    background-color: var(--but-col);
+    color: var(--font-color);
+    border: solid #2E236C;
+    border-radius: 60px;
+    text-align: center;
+    padding: 5%;
+}
+
+
+.start-but:active , .send_but:active
+{
+  border: solid 2px var(--font-color);  
+}
+
+.start-but.gameison 
+{
+    display: none;
+}
+
+.user_digit_input
+{
+    background-color: var(--but-col);
+    border: 1px;
+    font-size: 50px;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 800;
+    color: var(--font-color);
+    text-align: center;
+
+}
+
+
+.gameblock
+{
+    display: block;
+}
+
+.gameblock.gameisnot
+{
+    display: none;
+}
+
+
+.text-under-input , .tries-count
+{
+    color: var(--font-color); 
+    font-size: 30px;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 800;
+    margin-top: 20px;
+}
+.send_but
+{
+    font-size: 30px;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 800;
+    background-color: var(--but-col);
+    color: var(--font-color);
+    border: solid #2E236C;
+    border-radius: 50px;
+    text-align: center;
+    padding: 2%; 
+    margin-top: 10px;
+}
