@@ -1,0 +1,374 @@
+
+:root
+{
+	--main-color1: white;
+	--main-color2: black;
+}
+
+/* Для больших экранов */
+@media (max-width: 1920px)
+{
+	body {
+		font-family: 'Open Sans', sans-serif;
+		color: #201b2d;
+		font-size: 15px;
+		padding: 0;
+		margin: 0;
+	}
+	
+	div
+	{
+		font-weight: bold;
+	
+	}
+	
+	a
+	{
+		text-decoration: none;
+		color: var(--main-color2);
+		font-weight: bold;
+	}
+
+	.want
+	{
+		font-size: 40px;
+	}
+	
+	div, p, input, button, form, span, a, ul, li {
+		box-sizing: border-box;
+	}
+	
+	h1, h2, h3, h4, h5, h6 {
+		margin: 0;
+		font-family: 'Ubuntu', sans-serif;
+		font-weight: 900;
+	}
+	
+	p {
+		line-height: 1.5em;
+		font-size: 12px;
+	}
+	
+	.container 
+	{
+		width: 1123px;
+		margin: 0 auto;
+	}
+	
+	header
+	{
+		background-color: rgb(85,164,244);
+	}
+	
+	.header-container 
+	{
+		display: flex;
+		flex-direction: row;
+		padding-top: 20px;
+		padding-left: 30px;
+		color:var(--main-color1);
+		width: 100%;
+	}
+
+	.right-header-sect
+	{
+		margin-left: 20px;
+		padding-left: 130px;
+	}
+	
+	.main-sect.hide
+	{
+		display: none;
+
+	}
+
+	.main-sect
+	{
+		display: block;
+	}
+
+	.right-header-sect img {
+		transform: scale(0.8);
+		object-fit: contain;
+		width: 100%;
+		height: 100%;
+	}
+
+	.left-header-sect h1 
+	{
+		width: 500px;
+		font-size: 30px;
+	}
+	.header-container *
+	{
+		margin-bottom: 10px;
+	}
+	
+	.but
+	{
+		background-color: rgb(255, 212, 41);
+		border: none;
+		text-align: center;
+		height: 40px;
+		margin-top: 20px;
+		margin-bottom: 150px;
+		text-decoration: none;
+	}
+	
+	.block
+	{
+		margin-left: 5px;
+		margin-right: 5px;
+		text-align: center;
+		padding-left: 60px;
+		padding-right: 60px;
+		padding-bottom: 60px;
+	}
+	
+
+	.blocks
+	{
+		display: grid;
+		grid-template-columns: repeat(3, 370px);
+	}
+
+	.block-info
+	{
+		font-weight: normal;
+		color: grey;
+	}
+
+	.reg_form
+	{
+		width: 100%;
+		margin: auto;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.reg_form input
+	{
+		margin-top: 5px;
+		margin-bottom: 5px;
+		padding-left: 20px;
+		width: 250px;
+	}
+
+	.reg_form label 
+	{
+		font-size: 17px;
+	}
+
+
+	#ch_lb
+	{
+		width: 250px;
+		font-size: 15px;
+		color: rebeccapurple;
+	}
+
+
+
+	
+	.callback_form
+	{
+		padding-top: 30px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	
+	.callback_form input, select
+	{
+		padding-left: 20px;
+		width: 250px;
+		height: 30px;
+		border: solid 2px rgb(207, 204, 204);
+		margin-bottom: 10px;
+	}
+	
+	
+	footer 
+	{
+		padding-top: 50px;
+		padding-bottom: 50px;
+		background: rgb(35,109,180);
+	background: linear-gradient(0deg, rgba(35,109,180,1) 0%, rgba(70,191,233,1) 51%, rgba(31,92,159,1) 100%, rgba(9,9,121,1) 100%);
+	}
+	
+	.footer-text
+	{
+		text-align: center;
+		color:var(--main-color1);
+	}
+}
+
+/* Для планшетов и небольших ноутбуков */ 
+
+
+@media (min-width:992px) and (max-width: 1199px)
+
+{
+
+
+	.parag_under_h1
+	{
+		font-size: 1.3vw;
+	}
+
+	.right-header-sect
+	{
+		padding-left: 0px;
+		margin-left: 0px;
+	}
+
+	.container
+	{
+		width: 100vw;
+		overflow: auto;
+	}
+
+
+	header 
+	{
+		width: 100vw;
+	}
+
+	.right-header-sect img 
+	{
+		transform: scale(0.8);
+	}
+
+	.blocks
+	{
+		width: 100vw;
+		grid-template-columns: repeat(3,335px);
+		justify-content: center;
+
+	}
+}
+
+
+/* Для мобилок */
+
+@media (min-width: 768px) and (max-width:992px) {
+
+	.left-header-sect h1 
+	{
+		font-size: 2.2vw;
+	}
+
+	.container
+	{
+		width: 100%;
+		overflow: auto;
+	}
+
+	.right-header-sect img 
+	{
+		object-fit: contain;
+		position: static;
+		width: 100%;
+		height: 100%;
+	}
+
+	.right-header-sect
+	{
+		padding-left: 0px;
+		margin-left: 0px;
+		max-width: max-content;
+	}
+
+	header 
+	{
+		width: 100vw;
+	}
+
+	.want 
+	{
+		font-size: 3.2vw;
+	}
+	
+	.blocks
+	{
+		width: 100%;
+		grid-template-columns: repeat(3,250px);
+		justify-content: center;
+
+	}
+	.header-container
+	{
+		width: 100vw;
+	}
+	.left-header-sect
+	{
+		width: 50%;
+	}
+}
+
+@media  (max-width:768px)
+{
+	.right-header-sect
+	{
+		padding: 0px;
+	}
+	.container
+	{
+		width: 100%;
+	}
+
+
+	.parag_under_h1
+	{
+		width: 100%;
+	}
+
+	.blocks
+	{
+		width: 100%;
+		grid-template-columns: repeat(1,300px);
+		justify-content: center;
+
+	}
+
+
+	.left-header-sect
+	{
+		width: 50%;
+	}
+
+	.left-header-sect h1 
+	{
+		font-size: 3.2vw;
+		width: 100%;
+	}
+
+	.want
+	{
+		font-size: 4.2vw;
+	}
+
+	.block-info
+	{
+		width: 100%;
+		font-size: 2.50vw;
+		text-align: center;
+	}
+
+	.block img 
+	{
+		width: 10vw;
+	}
+
+
+	.block
+	{
+		width: 100%;
+		height: 100%;
+		padding: 0px;
+		margin: 0px;
+		text-align: center;
+	}
+
+}
