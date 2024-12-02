@@ -1,0 +1,75 @@
+/* Импорт шрифтов */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu+Condensed&display=swap');
+
+.pizza_block
+{
+    -webkit-box-shadow: -1px 11px 9px 0px rgba(230,230,230,1);
+    -moz-box-shadow: -1px 11px 9px 0px rgba(230,230,230,1);
+    box-shadow: -1px 11px 9px 0px rgba(230,230,230,1);
+    border:3px solid #b8b8b8;
+    overflow: hidden;
+    border-radius: 10px;
+    font-family: "Ubuntu Condensed", sans-serif;
+    margin-left: 20px;
+}
+
+
+.card_image
+{
+    height: 300px;
+}
+.card_image img
+{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.card_title
+{
+    font-weight: bold;
+    margin: 10px 0px;
+    font-size: 25px;
+}
+
+.card_title_additional
+{
+    font-size: 15px ; 
+    width: 90%;
+    color: gray;
+    height: 50px;
+    overflow: hidden;
+}
+
+
+.card_descr
+{
+  padding-left: 30px;
+}
+
+.pizza_card_price
+{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.diameter_select
+{
+    width: 50%;
+    border:2px solid #b8b8b8;
+    border-radius: 5px;
+    padding: 6px 0px 6px 15px;
+    color: grey;
+}
+
+.order_sect
+{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+
+.pizza_minus_but
+{
+    
+}

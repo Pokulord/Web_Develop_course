@@ -1,0 +1,19 @@
+body
+{
+  padding-top: 50px;
+}
+
+
+.container
+{
+  width: 1123px;
+  margin: 0 auto;
+}
+
+
+.pizza_block_cont
+{
+  display: grid;
+  grid-template-columns: repeat(3,360px);
+
+}
