@@ -1,0 +1,70 @@
+.nav_list , a
+{
+    list-style: none;
+    text-decoration: none;
+    color:black
+}
+
+.nav_list
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav_logo
+{
+    margin-right: 100px;
+}
+
+.nav_list a
+{
+    margin-left: 20px;
+}
+
+.nav_buts
+{
+    display: flex;
+    flex-direction: row;
+    margin-left: 50px;
+}
+
+.nav_buts *
+{
+    margin-right: 10px;
+}
+
+
+.calc_but
+{
+    border: 1px solid rgb(43, 10, 69);
+    background-color: rgb(43, 10, 69);
+}
+
+.request_but
+{
+    border: 1px solid orange;
+    background-color: orange; 
+}
+.calc_but , .request_but
+{
+    border-radius:5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    font-weight: bold;
+    width: 170px;
+}
+
+.request_but *, .calc_but *
+{
+    margin: 0px 5px 0px 5px;
+}
+
+.but_label
+{
+    margin-left: 15px;
+    color: white;
+}
